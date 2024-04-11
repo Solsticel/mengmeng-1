@@ -1,0 +1,76 @@
+<!--
+ * @Author: rxw
+ * @Date: 2023-01-26 14:48:35
+ * @LastEditors: rxw
+ * @LastEditTime: 2024-04-09 20:20:44
+ * @Description: file content
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body id="bgc">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>梦梦同学</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png"
+    />
+    <meta name="language" content="zh-CN" />
+    <meta name="title" content="梦梦同学" />
+    <meta
+      name="github"
+      content="https://github.com/sun0225SUN/Awesome-Love-Code"
+    />
+    <meta name="describe" content="" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <div class="mb-box">
+      <div class="bb">
+        <h2>小情书</h2>
+        <div class="bb_text">
+          <div id="code" style="font-size: 18px">
+            丁达尔效应出现的时候 光便有了形状 你出现的时候 心动便有了定义
+            想和你去很多很多地方 一起去见很多没见过风景 一起经历很多没经历的事情
+            一起感受清晨的阳光 一起在夕阳下漫步...<br />
+            I love three things in this world, Sun Moon and You, Sun for
+            morning, Moon for Night, You forever.
+          </div>
+        </div>
+        <p class="bb_myname">梦梦<br /></p>
+      </div>
+    </div>
+
+    <script>
+      Element.prototype.typewriter = function (a) {
+        var d = this,
+          c = d.innerHTML,
+          b = 0;
+        d.innerHTML = "";
+        var e = setInterval(function () {
+          var f = c.substr(b, 1);
+          if (f == "<") {
+            b = c.indexOf(">", b) + 1;
+          } else {
+            b++;
+          }
+          d.innerHTML = c.substring(0, b) + (b & 1 ? "_" : "");
+          if (b >= c.length) {
+            clearInterval(e);
+          }
+        }, 150);
+        return this;
+      };
+      document.getElementById("code").typewriter();
+    </script>
+    <audio id="main_audio" autoplay="autoplay" preload="auto" loop="">
+      <source src="http://t.cn/RRxEs1c" type="audio/mpeg" />
+    </audio>
+    <script type="text/javascript" src="js/count.js"></script>
+
+    <script type="text/javascript" async="" src="js/su.js"></script>
+  </body>
+</html>
